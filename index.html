@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP1 - Juegos</title>
+    <title>Spooky Arcade 🎃</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Colección de Juegos TP1</h1>
+        <h1>🎃 Spooky Arcade 🎃</h1>
     </header>
     
     <nav>
@@ -24,12 +24,39 @@
     </nav>
 
     <main>
-        <h2>Página Principal</h2>
-        <p>Bienvenido a nuestra plataforma de juegos. Selecciona un juego del menú para comenzar.</p>
+        <section class="hero">
+            <h2>Salió edición especial de Halloween 👁️✨</h2>
+            <img src="img/retro-halloween.jpg" alt="Spooky Arcade Banner" style="width: 100%; border-radius: 10px; border: 2px solid var(--naranja-halloween); margin: 1rem 0;">
+            <p>
+                Armamos este espacio para el TP1 mezclando estética retro-arcade con temática de terror. La idea es simple: tres juegos, cero complicaciones y una tabla de récords para ver quién manda. Probá tu suerte con los dados, jugale en contra al reloj en las cartas o fijate cuánto sabés de cine de terror. ¿Te da para entrar al podio?
+            </p>
+        </section>
+
+        <section>
+            <h3>Elegí tu juego 🎲🃏🧠</h3>
+            
+            <article>
+                <h3>🎲 Dados Malditos</h3>
+                <p>Necesitás sumar 50 puntos en la menor cantidad de tiradas. Puramente suerte, paciencia y manija.</p>
+                <a href="dados.html"><button class="btn-principal">Probar suerte</button></a>
+            </article>
+
+            <article>
+                <h3>🃏 Cartas de Ultratumba</h3>
+                <p>Enfrentás al crupier con el tiempo en contra. Ojo con colgarte, porque el reloj no perdona.</p>
+                <a href="cartas.html"><button class="btn-principal">Jugar cartas</button></a>
+            </article>
+
+            <article>
+                <h3>🧠 Trivia de Terror</h3>
+                <p>Preguntas sobre clásicos del cine de terror consumidas en tiempo real desde una API. A ver qué tanto sabés.</p>
+                <a href="preguntas.html"><button class="btn-principal">Meterse a la trivia</button></a>
+            </article>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Informática General - Artes Multimediales UNA</p>
+        <p>TP1 Informática General — Artes Multimediales (UNA) 2026</p>
     </footer>
 
 </body>
