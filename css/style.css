@@ -111,3 +111,225 @@ th {
     background-color: var(--violeta-oscuro);
     color: var(--texto-claro);
 }
+.reglas {
+    background-color: var(--fondo-tarjeta);
+    border: 1px solid var(--violeta-oscuro);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 1.2rem 0;
+}
+
+.oculto {
+    display: none;
+}
+
+.mensaje {
+    font-weight: bold;
+    margin: 1rem 0;
+    min-height: 1.5em;
+}
+
+#timer-contenedor {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--naranja-halloween);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.blackjack-mesa {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.blackjack-zona {
+    flex: 1;
+    min-width: 200px;
+}
+
+.mano-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 120px;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+}
+
+.carta-visual {
+    width: 70px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    color: #1a1a2e;
+    font-size: 0.7rem;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+}
+
+.carta-roja {
+    color: #cc0000;
+}
+
+.carta-oculta {
+    background: repeating-linear-gradient(
+        45deg,
+        #1a0926,
+        #1a0926 5px,
+        #8a2be2 5px,
+        #8a2be2 10px
+    );
+    color: var(--texto-claro);
+    border: 2px solid var(--violeta-oscuro);
+}
+
+.carta-esquina-sup {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.carta-esquina-inf {
+    position: absolute;
+    bottom: 4px;
+    right: 5px;
+    line-height: 1.1;
+    text-align: center;
+    transform: rotate(180deg);
+}
+
+.carta-centro-grande {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.carta-centro-figura {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.carta-grid-2,
+.carta-grid-3,
+.carta-grid-4,
+.carta-grid-5,
+.carta-grid-6,
+.carta-grid-7,
+.carta-grid-8,
+.carta-grid-9,
+.carta-grid-10 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 16px 8px;
+    box-sizing: border-box;
+}
+
+.carta-grid-2  { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+.carta-grid-3  { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 1fr; }
+.carta-grid-4  { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+.carta-grid-5  { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
+.carta-grid-6  { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
+.carta-grid-7  { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr; }
+.carta-grid-8  { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr; }
+.carta-grid-9  { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
+.carta-grid-10 { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr; }
+
+.figura-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    line-height: 1;
+}
+
+.contenedor-dados {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.contenedor-dados img {
+    width: 180px;
+    height: 180px;
+}
+
+.preguntas-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--naranja-halloween);
+}
+
+#contenedor-pregunta {
+    margin: 1rem 0;
+}
+
+#texto-pregunta {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#contenedor-opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.opcion-btn {
+    background-color: var(--fondo-principal);
+    color: var(--texto-claro);
+    border: 2px solid var(--violeta-oscuro);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.opcion-btn:hover {
+    border-color: var(--naranja-halloween);
+    color: var(--naranja-halloween);
+}
+
+.opcion-correcta {
+    background-color: #1a4a2e;
+    border-color: var(--verde-neon);
+    color: var(--verde-neon);
+}
+
+.opcion-incorrecta {
+    background-color: #4a1a1a;
+    border-color: #cc0000;
+    color: #ff6666;
+}
+
+.seccion-record {
+    margin-bottom: 1.5rem;
+}
+
+.sin-records {
+    color: var(--violeta-oscuro);
+    font-style: italic;
+}
